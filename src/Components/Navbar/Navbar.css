@@ -1,0 +1,131 @@
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;  
+  background-color: white;
+}
+#top-nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+  }
+  
+  #left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #fullscreen-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #mobile-left{
+    display: none;
+  }
+  .nav-cat-mobile{
+    display: none;
+  }
+  @media only screen and (max-width: 45em) {
+    .nav-cat-mobile {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-right: 30px;
+    }
+  #fullscreen-left{
+    display:none;
+  }
+  #mobile-left{
+    display: flex;
+  }
+  }
+  #center {
+    flex: 1;
+  }
+  
+  #right {
+    flex: 1;
+  }
+  
+  .nav-cat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 30px;
+  }
+
+  .nav-cat:hover {
+    cursor: pointer;
+  }
+  
+  .nav-cat:hover {
+    color: #59C374;
+  }
+  
+  .cat-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .cat-link-selected {
+    text-decoration: none;
+    color: #59C374;
+  }
+  
+  .line-viz {
+    background-color: #59C374;
+    height: 1px;
+    align-self: flex-end;
+    width: 100%;
+  }
+  
+  .line-inv {
+    height: 1px;
+    align-self: flex-end;
+    width: 100%;
+  }
+  
+  #center {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+  }
+  
+  #right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  #right>*:hover {
+    filter: invert(36%) sepia(97%) saturate(495%) hue-rotate(88deg) brightness(96%) contrast(96%);
+  }
+  
+  #badge:hover {
+    filter: invert(36%) sepia(97%) saturate(495%) hue-rotate(88deg) brightness(96%) contrast(96%);
+  
+  }
+  
+  #badge {
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: xx-small;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(15px, -27px);
+  }
+ 

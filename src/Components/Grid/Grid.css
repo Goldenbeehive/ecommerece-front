@@ -1,0 +1,112 @@
+#title {
+    padding-top: 6vh;
+    margin-left: 10vw;
+    font-size: xx-large;
+}
+
+.lighttext {
+    font-weight: 300;
+}
+
+.incart {
+    background-color: #59C374;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    left: 75%;
+    position: absolute;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.incart:hover {
+    box-shadow: 0 0 10px 2px #59C374;
+}
+
+.incart>* {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    ;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    place-self: center;
+    padding: 15px;
+    width: 386px;
+    height: 440px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.1);
+}
+
+.cardimg {
+    width: 354px;
+    height: 330px;
+    object-fit: contain;
+}
+
+.outOfStock {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    width: 354px;
+    height: 330px;
+    z-index: 22;
+    background-color: #c4c4c47d;
+    color:#8D8F9A;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardskelly {
+    width: 354px;
+    height: 330px;
+    background-color: #f0f0f0;
+    background: linear-gradient(to right, transparent 0%, #e0e0e0 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+}
+
+#textskelly {
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+    background-color: #f0f0f0;
+    background: linear-gradient(to right, transparent 0%, #e0e0e0 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
